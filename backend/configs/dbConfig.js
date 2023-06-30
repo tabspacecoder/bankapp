@@ -1,0 +1,13 @@
+module.exports={
+    HOST:'localhost',
+    USER:'root',
+    PASSWORD:'cosmic',
+    DB:'banking_system',
+    DIALECT:'mysql',
+    pool:{
+        max:5,
+        min:0,
+        acquire:30000,
+        idle:10000
+    }
+}

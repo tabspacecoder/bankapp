@@ -2,7 +2,7 @@ const { where } = require('sequelize');
 const db= require('../utils/connectionUtil');
 const Customers = db.customer;
  const loginService=async (req,res)=>{
-    let ids=req.body.id;
+    let ids=req.body.customerId;
     let customer=await Customers.findOne({where:{id:ids}});
     let password=req.body.password;
     if(customer==null){
